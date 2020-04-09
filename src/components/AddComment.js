@@ -24,7 +24,7 @@ class AddComment extends Component {
     let commentArea = null;
     if (this.state.editMode) {
       commentArea = (
-        <View style={StyleSheet.container}>
+        <View style={styles.container}>
           <TextInput
             placeholder="Pode comentar..."
             style={styles.input}
@@ -34,7 +34,7 @@ class AddComment extends Component {
             onSubmitEditing={this.handleAddComment}
           />
           <TWF onPress={() => this.setState({editMode: false})}>
-            <Icon name="times" size={15} color="#555" />
+            <Icon name="times" size={20} color="#555" />
           </TWF>
         </View>
       );
